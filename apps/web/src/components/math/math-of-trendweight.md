@@ -192,6 +192,8 @@ $$S_t = S_{t-1} + \alpha(X_t - S_{t-1})$$
 
 Which is the "move 10% toward today's weight" formula we use.
 
+_Note: This is called "exponential" smoothing even though the weights follow a geometric sequence because a geometric sequence is an exponential function sampled at discrete intervals. See [Exponential smoothing on Wikipedia](https://en.wikipedia.org/wiki/Exponential_smoothing) for discussion of the naming history._
+
 ### Relationship to Simple Moving Averages
 
 Unlike a simple moving average (SMA) that gives equal weight to a fixed number of days, ESMA gives exponentially decreasing weights to all historical data. This creates several advantages:
